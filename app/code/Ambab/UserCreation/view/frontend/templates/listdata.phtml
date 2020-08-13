@@ -1,0 +1,28 @@
+<?php
+    $collection = $this->getTestCollection();
+
+    print_r($collection);
+    exit;
+
+?>
+<table class="data table" id="test-data-table">
+    <caption class="table-caption">Vky Test Data</caption>
+    <thead>
+        <tr>
+            <th scope="col" class="col title">Title</th>
+            <th scope="col" class="col author">Author</th>
+            <th scope="col" class="col content">Content</th>
+            <th scope="col" class="col created_at">Created At</th>
+            <th scope="col" class="col actions">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <?php  foreach ($collection as $key => $data):
+            ?>
+            <tr>
+                <td data-th="Title" class="col title"><?php print_r($data); ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
