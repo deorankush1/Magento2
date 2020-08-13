@@ -1,1 +1,19 @@
-<h1><?php echo $this->escapeHtml($this->getMessage()); ?></h1>
+<h1> Booking page</h1>
+
+<form action="<?php echo $block->getFormAction() ?>" method="post">
+    <input name="name" type="text"  placeholder="Name" required>
+    <input name="mobile" type="number" placeholder="Mobile Number">
+	<select id="Gender" name="gender">
+	    <option value="male">Male</option>
+	    <option value="female">Female</option>
+	    <option value="others">Other</option>
+	</select>
+	<p>Please select your age:</p>    
+	<input type="radio" id="age1" name="age" value="30">
+	  <label for="age1">0 - 30</label><br>
+	  <input type="radio" id="age2" name="age" value="60">
+	  <label for="age2">31 - 60</label><br>  
+	  <input type="radio" id="age3" name="age" value="100">
+	  <label for="age3">61 - 100</label><br><br>
+	<input type="submit" value="Send booking informations">
+</form>

@@ -19,7 +19,7 @@ use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 
 class CustomerLink extends AbstractDb
 {
-    const TABLE_NAME = 'ambab_custom_user';
+    const TABLE_NAME = 'custom_table';
 
     protected function _construct()
     {
